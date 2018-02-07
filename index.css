@@ -1,0 +1,81 @@
+/*大框架整体样式 added by ltt*/
+body{
+    overflow: auto;
+    /* background-image: none; */
+    background-color: #010917;
+}
+
+
+.content{
+    position: relative;
+    overflow: hidden;
+    height: 1072px;
+}
+
+.center-bg{
+    width: 100%;
+    height: 1080px;
+    background: url(images/ks_home_bgMid.png) no-repeat center;
+}
+
+
+.center-container{
+   
+    height: 718px;
+    width: 1940px;
+    margin: 130px auto;
+    background: url(images/ks-w-map-bg-mapbg.png) no-repeat center;
+    background-size: contain;
+}
+
+
+.footer{
+    width: 100%;
+    height: 238px;
+    position: absolute;
+    bottom: 0;
+    background: url(images/ks_home_earth.png) no-repeat center;
+}
+
+.icon-map{
+    width: 1132px;
+    height: 236px;
+    opacity: 0;
+    background: url(images/ks_home_ksmap.png) no-repeat center;
+    margin: 0px auto;
+    -webkit-animation: fromBottom 1s linear 1s,repeatTopDown 4s linear 2s infinite;
+    animation: fromBottom 1s linear 1s,repeatTopDown 4s linear 2s infinite;
+    
+}
+
+@keyframes fromBottom{
+    0%{
+      -webkit-transform: translateY(138px);
+      transform: translateY(138px);
+      opacity: 0;
+      
+      
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes repeatTopDown{
+    0% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        opacity: 1;
+      }
+    50%{
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+  }
